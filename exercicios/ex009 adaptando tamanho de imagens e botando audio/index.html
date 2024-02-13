@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho das imagens</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png"  alt="imagem flexivel">
+    </picture>
+    <h1> Reproduzindo audio </h1>
+
+    <p>segue abaixo um audio lançado</p>
+    <audio src="midia/calimba.mp3" controls autoplay></audio>
+
+    <!--outras maneiras de baixar audio caso n seja compativel com mp3-->
+
+    <audio preload="metadata"autoplay controls >
+        <source src="midia/calimba.ogg" type="audio/ogg">
+        
+    </audio>
+    <p>Infelizmente seu navegador não consegue reproduzir audio.</p>
+    <a href="midia/calimba.mp3">Clique aq para baixar o arquivo em mp3</a></p>  
+</body>
+</html>
